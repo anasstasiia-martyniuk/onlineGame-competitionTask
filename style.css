@@ -1,0 +1,19 @@
+.grid-container {
+    width: 640px;
+}
+
+.boxes {
+    border: 20px solid black;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.resultat-message {
+    font-size: 72px;
+    font-weight: 700;
+    top: 40%;
+    left: 15%;
+}

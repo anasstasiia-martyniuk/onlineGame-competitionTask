@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet" />
+    <title>Online spel</title>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center h-100 pt-1">
+        
+        <div>
+            <div class="row mb-3">
+                
+                <div class="col-6">
+                    <label for="gridSelect" class="form-label">Kies de grid</label>
+                    <select class="form-select" id="gridSelect">
+                        <option value="6" selected>6x6</option>
+                        <option value="8">8x8</option>
+                    </select>
+                </div>
+                
+                <div class="col-6">
+                    <label for="colorSelect" class="form-label">Kies het aantal kleuren</label>
+                    <select class="form-select" id="colorSelect">
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6" selected>6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                
+            </div>
+            
+            <div class="d-flex flex-row justify-content-between align-items-center mb-3 w-100">
+                <button type="button" class="btn btn-primary" id="startBtn">Start het spel</button>
+                <div id="timer" class="fw-bold display-6">60</div>
+                <div>gecklikt: <strong id="amountOfClicks">0</strong></div>
+            </div>
+            
+            <div class="grid-container position-relative" id="gridContainer">
+                <div id="boxContainer" class="d-flex flex-wrap flex-row boxes"></div>
+                <div class="position-absolute resultat-message" id="resultatMessage"></div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
