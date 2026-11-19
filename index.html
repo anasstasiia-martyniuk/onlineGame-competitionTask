@@ -9,11 +9,35 @@
     <script src="./main.js" defer></script>
 </head>
 <body>
-    <div class="container-fluid d-flex flex-column justify-content-center align-items-center h-100 pt-1">
-        
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center h-100 pt-3">
         <div>
-            <div class="row mb-3">
-                
+            <div class="card border-0 mb-4">
+                <div class="card-header text-bg-warning text-center fw-bold">Ranglijst</div>
+                <div class="card-body p-0">
+                    <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Naam</th>
+                            <th>Tijd</th>
+                            <th>Aantal beurten</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leadersTable">
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <labe for="nameInput" class="form-label">Voeg je naam toe:</labe>
+                <input type="text" id="nameInput" class="form-control" />
+            </div>
+            <div class="row mb-4">
                 <div class="col-6">
                     <label for="gridSelect" class="form-label">Kies de grid</label>
                     <select class="form-select" id="gridSelect">
